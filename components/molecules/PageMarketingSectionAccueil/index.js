@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container,Row,Col} from 'reactstrap';
 import Bouton from '../../shared/Bouton';
+import DubaniOverlay from '../../shared/DubaniOverlay';
 import Texte from '../../shared/Texte';
 import Title from '../../shared/Title';
 import PageMarketingSectionAccueilStc from './PageMarketingSectionAccueil.stc'
@@ -10,7 +11,7 @@ function PageMarketingSectionAccueil() {
         <PageMarketingSectionAccueilStc>
            <Row className="pt-0 pt-md-5 mt-0 mt-md-5">
                 <Col lg={7} className="align-self-center py-0 py-md-5 mt-0 mt-md-5">
-                    <h1 className="background-overlay">Dubani agency</h1>
+                    <DubaniOverlay width="100%" />
                     <div className="px-2 px-md-5 mx-0 mx-md-5 " style={{position:"relative",zIndex:1}}>
                         <Title className="py-2 py-md-3">
                             Marketing digital

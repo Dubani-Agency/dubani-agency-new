@@ -1,10 +1,10 @@
 import React from 'react'
 import DubaniOverlayStc from './DubaniOverlay.stc'
 
-function DubaniOverlay() {
+function DubaniOverlay(props) {
     return (
         <DubaniOverlayStc className="background-overlay">
-            <marquee width="70%" direction="left" height="250px">
+            <marquee width={props.width} direction="left" height="250px">
                 Dubani agency
             </marquee>
         </DubaniOverlayStc>
