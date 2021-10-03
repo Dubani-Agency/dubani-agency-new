@@ -51,41 +51,37 @@ const Header = (props) => {
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className={autre_page}>
           <Nav className="mr-0 px-0 px-md-5" navbar>
-            <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/">
-                  A propos de nous
-                </Link>
-            </NavItem>
-            <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/blog/">
-                  Blog
-                </Link>
-            </NavItem>
+            
+          
             <UncontrolledDropdown nav inNavbar className="py-2 py-md-3 align-self-center">
               <DropdownToggle nav caret>
                 Nos Service
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem >
-                  <Link href="/marketing-digital">
+                  <Link href="https://www.dubaniagency.com/marketing-digital">
                     Marketing digital
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="/web-design">
+                  <Link href="https://www.dubaniagency.com/web-design">
                     Web design
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="/referencement">
+                  <Link href="https://www.dubaniagency.com/referencement">
                     Referencement
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/contact/">
+                <Link href="https://www.dubaniagency.com/blog/">
+                  Blog
+                </Link>
+            </NavItem>
+            <NavItem className="py-2 py-md-3 align-self-center">
+                <Link href="https://www.dubaniagency.com/contact/">
                   Contact
                 </Link>
             </NavItem>

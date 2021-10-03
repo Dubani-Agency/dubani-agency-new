@@ -7,7 +7,7 @@ import CardService from '../CardService';
 import {AiOutlineFileSearch} from 'react-icons/ai'
 import {BsArrowRight} from 'react-icons/bs'
 import Bouton from '../../shared/Bouton';
-import Link from 'next/link'
+import Link from 'next/link' 
 import { useEffect} from 'react'
 import {gsap} from 'gsap';
 
@@ -69,7 +69,7 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <Link href="/marketing-digital">
+                                <Link href="https://www.dubaniagency.com/marketing-digital">
                                     <BsArrowRight />
                                 </Link>
                             </Bouton>
@@ -93,7 +93,7 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <Link href="/web-design">
+                                <Link href="https://www.dubaniagency.com/web-design">
                                     <BsArrowRight />
                                 </Link>
                             </Bouton>
@@ -134,7 +134,7 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <Link href="/referencement">
+                                <Link href="https://www.dubaniagency.com/referencement">
                                     <BsArrowRight />
                                 </Link>
                             </Bouton>

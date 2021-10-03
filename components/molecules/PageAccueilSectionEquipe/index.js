@@ -9,14 +9,37 @@ from 'reactstrap'
 import Title from '../../shared/Title'
 import Texte from '../../shared/Texte'
 
+import { useEffect} from 'react'
+import {gsap} from 'gsap';
+
+import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function PageAccueilSectionEquipe() {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".PageAccueilSectionEquipe",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+        
+            lt.from(".PageAccueilSectionEquipe .MyTitle",{ y:100,duration:1,opacity:0,})
+            .from ('.PageAccueilSectionEquipe .right1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+            .from ('.PageAccueilSectionEquipe .left',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: 100 })
+    }, []);
+
+
     return (
         <PageAccueilSectionEquipeStc>
-             <Container>
+             <Container className="PageAccueilSectionEquipe">
                 <Row className="py-0 py-md-5">
                     <Col lg={6}>
-                        <Title niveau={1}>
+                        <Title niveau={1} className="MyTitle">
                             Notre Equipe
                         </Title>
                     </Col>
@@ -24,12 +47,12 @@ function PageAccueilSectionEquipe() {
                     </Col>
                 </Row>
                 <Row className="py-0 py-md-5">
-                    <Col lg={4} className="right">
+                    <Col lg={4} className="right right1">
                         <div style={{margin:"auto",display:"block",width:"100%",borderRadius:"100%",overflow:"hidden"}}>
                             <img src="/img/PageAccueilSectionEquipe/avatar.jpg " width="100%" />
                         </div>
                     </Col>
-                    <Col lg={8} className="align-self-center">
+                    <Col lg={8} className="left align-self-center">
                         <Title niveau={1}>
                             Mattiew Johnes
                         </Title>

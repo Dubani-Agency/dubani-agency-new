@@ -25,9 +25,6 @@ const Index = (props) => {
       <PageAccueilSectionAccueil />
       <PageAccueilSectionService className="py-2 py-md-5"/>
       <PageAccueilSectionProjet className="py-2 py-md-5"/>
-
-      <SectionStc></SectionStc>
-
       <PageAccueilSectionClient className="py-2 py-md-5"/>
       
       <PageAccueilSectionEquipe className="py-2 py-md-5"/>

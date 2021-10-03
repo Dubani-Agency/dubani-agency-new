@@ -19,7 +19,7 @@ const HeaderStc=Styled.div`
             width:100%;
         }
         @media (min-width: 991px) {
-            margin:auto 10px;
+            margin:auto 25px;
 
             height:auto !important;
         }

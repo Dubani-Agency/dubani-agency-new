@@ -12,14 +12,38 @@ import {BsMap} from 'react-icons/bs';
 import {FaFacebookSquare,FaInstagram} from 'react-icons/fa';
 import Texte from '../../shared/Texte';
 
+import { useEffect} from 'react'
+import {gsap} from 'gsap';
+
+import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function Footer() {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".Footer",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+        
+            lt.from(".Footer .logo",{ y:100,duration:1,opacity:0,})
+            .from ('.Footer .row1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+            .from ('.Footer .trait',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: 100 })
+            .from ('.Footer .row2',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+    }, []);
+
     return (
         <FooterStc>
-            <Container className="py-2 py-md-5">
+            <Container className="Footer py-2 py-md-5">
                 <div className="divLogo text-center py-3 py-md-3" style={{margin:"auto",display:"block"}}>
-                    <img src="/img/logo.svg"  height="80" />
+                    <img src="/img/logo.svg" className="logo"  height="80" />
                 </div>
-                <Row>
+                <Row className="row1">
                     <Col lg={4}>
                         <Row>
                             <Col sm={2} className="align-self-center">
@@ -79,7 +103,7 @@ function Footer() {
                     </Col>
                 </Row>
                 <div className="trait py-2 py-md-4"></div>
-                <Row className="py-md-5 py-2">
+                <Row className="py-md-5 py-2 row2">
                     <Col lg={6} className="px-md-5pl-md-0">
                         <Title niveau={2}>
                             DUBANI AGENCY
