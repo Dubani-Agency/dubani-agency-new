@@ -1,22 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Banniere1Stc from './Banniere1.stc'
 import {Container,Row,Col} from 'reactstrap'
 import Texte from '../../shared/Texte'
 import {AiOutlineCheckCircle} from 'react-icons/ai'
 
+import {gsap} from 'gsap';
+import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+// import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+gsap.registerPlugin(ScrollTrigger);
+
 function Banniere1(props) {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".Banniere1",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+        
+            lt.from(".Banniere1 .container-image",{ y:100,duration:1,opacity:0,})
+            .from ('.Banniere1 .img',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.Banniere1 .container-but',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            
+    }, []);
+
     return (
-        <Banniere1Stc className={props.className}>
+        <Banniere1Stc className={"Banniere1 "+props.className}>
             <div className="sectionApres">
                 <div className="container container-image my-2 my-md-0">
-                    <Row>
+                    <Row className="mx-0">
                         <Col lg={7}>
-                            <img src="/img/img6.png" className="d-none d-lg-block"  />
+                            <img src="/img/img6.png" alt="Image d'un site Web dans un ordinateur" className="img d-none d-lg-block"  />
                         </Col>
                         <Col lg={5}>
                             <div className="container-but my-2 my-4 mx-2 mx-md-4 py-2 py-md-4 px-2 px-md-4 align-self-center" style={{background:"#fff"}}>
                                 <ul>
-                                    <li>
+                                    <li >
                                         <Texte>
                                         <span className="icon"><AiOutlineCheckCircle/></span> <span>Developper une presence en ligne</span>
                                         </Texte>

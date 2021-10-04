@@ -7,6 +7,8 @@ import PageWebSectionPackage2 from "../components/molecules/PageWebSectionPackag
 import PageWebSectionProjet from "../components/molecules/PageWebSectionProjet";
 
 const WebDesign = (props) => {
+
+  
   return (
     <>
       <PageWebSectionAccueil />

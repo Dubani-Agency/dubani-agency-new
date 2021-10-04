@@ -7,7 +7,7 @@ import PageAccueilSectionAccueilStc from './PageAccueilSectionAccueil.stc'
 import Link from 'next/link'
 import {gsap} from 'gsap';
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
-import DubaniOverlay from '../../shared/DubaniOverlay';
+import DubaniOverlay from '../../shared/DubaniOverlay'; 
 // import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
 
 gsap.registerPlugin(ScrollTrigger);
@@ -36,7 +36,7 @@ function PageAccueilSectionAccueil() {
         <PageAccueilSectionAccueilStc>
            <Row className="PageAccueilSectionAccuel">
                 <Col lg={7} className=" align-self-center ">
-                    <DubaniOverlay />
+                    <DubaniOverlay width="70%" />
                     <div className="px-2 px-md-5 mx-0 mx-md-5 px-0 px-md-5" style={{position:"relative",zIndex:1}}>
                         <Title className="pageTitle py-2 py-md-3">
                             Dubani Agency

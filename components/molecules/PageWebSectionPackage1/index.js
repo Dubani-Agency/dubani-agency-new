@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import PageWebSectionPackage1Stc from './PageWebSectionPackage1.stc'
 import {Container,Row,Col} from 'reactstrap';
 import Title from '../../shared/Title';
@@ -7,9 +7,32 @@ import Texte from '../../shared/Texte';
 import CardProjet from '../CardProjet';
 import Bouton from '../../shared/Bouton';
 import {BsArrowRight} from 'react-icons/bs'
-import { useState } from 'react';
 
+import { useState } from 'react';
+import {gsap} from 'gsap';
+import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+// import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+
+gsap.registerPlugin(ScrollTrigger);
 function PageWebSectionPackage1(props) {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".PageWebSectionPackage1",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+        
+            lt.from(".PageWebSectionPackage1 .MyTitle",{ y:100,duration:1,opacity:0,})
+            .from ('.PageWebSectionPackage1 .PageText',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageWebSectionPackage1 .containerChiffre',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            
+    }, []);
+
 
     const [actif1,setActif1]=useState("active");
     const [actif2,setActif2]=useState("");
@@ -94,14 +117,14 @@ function PageWebSectionPackage1(props) {
 
 
     return (
-        <PageWebSectionPackage1Stc className={props.className}>
+        <PageWebSectionPackage1Stc className={"PageWebSectionPackage1 "+props.className}>
             <Container className="px-0">
                 <Row>
                     <Col lg={8}>
-                        <Title className="py-2 py-md-3">
+                        <Title className="MyTitle py-2 py-md-3">
                             Projets
                         </Title>
-                        <Title niveau={1}>
+                        <Title niveau={1} className="PageText">
                             Nous nous occupons de votre site web, de la création à la génération de trafic.
                         </Title>
                        
