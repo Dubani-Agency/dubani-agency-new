@@ -67,7 +67,7 @@ const ReferencementSeoStc=Styled.div`
         }
         
     }
-    .hndbDR .imgComposant {
+   .imgComposant {
         display:none;
     }
 `;
