@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,14 +11,14 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
-} from 'reactstrap';
+  NavbarText,
+} from "reactstrap";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import HeaderStc from './Header.stc'
+import HeaderStc from "./Header.stc";
 
-import {AiOutlineMenu} from 'react-icons/ai'
+import { AiOutlineMenu } from "react-icons/ai";
 import Router from "next/router";
 import { useRouter } from "next/router";
 
@@ -30,42 +30,43 @@ const Header = (props) => {
   const router = useRouter();
 
   const { pathname } = router;
-  
-  let autre_page="block-menu";
 
-  if(pathname!="/" && pathname!="/contact")
-  {
-    autre_page="block-menu autre";
+  let autre_page = "block-menu";
+
+  if (pathname != "/" && pathname != "/contact") {
+    autre_page = "block-menu autre";
   }
 
   return (
     <HeaderStc>
       <Navbar expand="md" className="">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <img src="/img/logo.svg" height="40"/>
+          <img src="/img/logo.svg" height="40" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
           <span className="toggle">
-              <AiOutlineMenu />
+            <AiOutlineMenu />
           </span>
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className={autre_page}>
           <Nav className="mr-0 px-0 px-md-5" navbar>
-            
-          
-            <UncontrolledDropdown nav inNavbar className="py-2 py-md-3 align-self-center">
+            <UncontrolledDropdown
+              nav
+              inNavbar
+              className="py-2 py-md-3 align-self-center"
+            >
               <DropdownToggle nav caret>
                 Nos Service
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem >
+                <DropdownItem>
                   <Link href="https://www.dubaniagency.com/marketing-digital">
                     Marketing digital
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="https://www.dubaniagency.com/web-design">
-                    Web design
+                  <Link href="https://www.dubaniagency.com/création-de-site-web">
+                    création de site Web
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
@@ -76,20 +77,16 @@ const Header = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="https://www.dubaniagency.com/blog/">
-                  Blog
-                </Link>
+              <Link href="https://www.dubaniagency.com/blog/">Blog</Link>
             </NavItem>
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="https://www.dubaniagency.com/contact/">
-                  Contact
-                </Link>
+              <Link href="https://www.dubaniagency.com/contact/">Contact</Link>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </HeaderStc>
   );
-}
+};
 
 export default Header;
