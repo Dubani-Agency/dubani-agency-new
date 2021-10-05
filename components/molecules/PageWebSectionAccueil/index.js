@@ -63,9 +63,9 @@ function PageWebSectionAccueil() {
                     </div>
                 </Col>
                 <Col lg={5} className="right d-none d-lg-block py-0 py-md-5 ">
-                    <img src="/img/web-1.png" className="img1" width="100%" style={{position:"absolute",left:"0px",top:"100px"}} />
-                    <img src="/img/web-2.png" className="img2" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
-                    <img src="/img/web-3.png" className="img3" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
+                    <img src="/img/web-1.png" alt="Maquette Web design, exemple dubani" className="img1" width="100%" style={{position:"absolute",left:"0px",top:"100px"}} />
+                    <img src="/img/web-2.png" alt="Maquette Web design, exemple dubani" className="img2" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
+                    <img src="/img/web-3.png" alt="Maquette Web design, exemple dubani" className="img3" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
                 </Col>
             </Row>
           </Container>

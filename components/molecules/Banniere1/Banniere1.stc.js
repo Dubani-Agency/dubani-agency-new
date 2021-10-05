@@ -46,5 +46,11 @@ background-image:url(/img/pc.jpg);
             margin-bottom:"-100px;
         }
     }
+
+    .row
+    {
+        margin-left:0px !important;
+        margin-right:0px !important
+    }
 `;
 export default Banniere1Stc;

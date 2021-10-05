@@ -1,13 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PageReferencementSectionSeoStc from './PageReferencementSectionSeo1.stc'
 import {Container,Row,Col} from "reactstrap"
 import Texte from '../../shared/Texte'
 import Title from '../../shared/Title'
 import Bouton from '../../shared/Bouton'
 import Link from 'next/link'
+
+import {gsap} from 'gsap';
+import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+import DubaniOverlay from '../../shared/DubaniOverlay';
+// import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+gsap.registerPlugin(ScrollTrigger);
+
 function PageReferencementSectionSeo() {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".PageReferencementSectionSeo1",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+        
+            lt.from(".PageReferencementSectionSeo1 .pageTitle",{ y:100,duration:1,opacity:0,})
+            .from ('.PageReferencementSectionSeo1 .MyTitle',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageReferencementSectionSeo1 .row1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            
+    }, []);
     return (
-        <PageReferencementSectionSeoStc>
+        <PageReferencementSectionSeoStc className="PageReferencementSectionSeo1">
             <Container className="px-2 px-md-0">
                 <Row className="py-md-5 py-2 ">
                     <Col lg={5} className="right d-none d-lg-block align-self-center">
@@ -15,10 +39,10 @@ function PageReferencementSectionSeo() {
                     </Col>
                     <Col lg={7} className="align-self-center ">
                         <div className="" style={{position:"relative",zIndex:1}}>
-                            <Title className="py-2 py-md-3">
+                            <Title className="py-2 py-md-3 pageTitle">
                             SEO
                             </Title>
-                            <Title niveau={1} className="">
+                            <Title niveau={1} className="MyTitle">
                                 il est primordial qu'un budget SEO reçoive l'investissement dont 
                                 il a besoin pour développer votre activité en ligne.
                             </Title>
@@ -26,7 +50,7 @@ function PageReferencementSectionSeo() {
                     </Col>
                     
                 </Row>
-                <Row>
+                <Row className="row1">
                     <Col lg={6} className="align-self-center">
                         <Texte className="py-2 py-md-2">
                             .Aucours des 15 dernières années, nous avons vu 
@@ -48,7 +72,7 @@ function PageReferencementSectionSeo() {
                         </Bouton>
                     </Col>
                     <Col lg={6}>
-                        <img src="/img/call.PNG" width="100%" />
+                        <img src="/img/call.PNG" alt="Planifier votre stratégie marketing" width="100%" />
                     </Col>
                    
                 </Row>
