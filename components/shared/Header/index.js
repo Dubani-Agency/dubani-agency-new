@@ -70,7 +70,7 @@ const Header = (props) => {
                 <DropdownItem>
                   <Link
                     class="text-uppercase"
-                    href="https://www.dubaniagency.com/création-de-site-web"
+                    href="https://www.dubaniagency.com/creation-de-site-web"
                   >
                     création de site Web
                   </Link>
