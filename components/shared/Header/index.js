@@ -55,31 +55,40 @@ const Header = (props) => {
               inNavbar
               className="py-2 py-md-3 align-self-center"
             >
-              <DropdownToggle nav caret>
-                Nos Service
+              <DropdownToggle class="text-uppercase" nav caret>
+                Nos Services
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link href="https://www.dubaniagency.com/marketing-digital">
+                  <Link
+                    class="text-uppercase"
+                    href="https://www.dubaniagency.com/marketing-digital"
+                  >
                     Marketing digital
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="https://www.dubaniagency.com/création-de-site-web">
+                  <Link
+                    class="text-uppercase"
+                    href="https://www.dubaniagency.com/création-de-site-web"
+                  >
                     création de site Web
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="https://www.dubaniagency.com/referencement">
+                  <Link
+                    class="text-uppercase"
+                    href="https://www.dubaniagency.com/referencement"
+                  >
                     Referencement
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem className="py-2 py-md-3 align-self-center">
+            <NavItem className="py-2 py-md-3 align-self-center text-uppercase">
               <Link href="https://www.dubaniagency.com/blog/">Blog</Link>
             </NavItem>
-            <NavItem className="py-2 py-md-3 align-self-center">
+            <NavItem className="py-2 py-md-3 align-self-center text-uppercase">
               <Link href="https://www.dubaniagency.com/contact/">Contact</Link>
             </NavItem>
           </Nav>
