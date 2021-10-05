@@ -6,7 +6,7 @@ import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { BsMap } from "react-icons/bs";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import Texte from "../../shared/Texte";
-
+import Link from 'next/link'
 import { useEffect } from "react";
 import { gsap } from "gsap";
 
@@ -135,9 +135,10 @@ function Footer() {
             <Title niveau={3}>Nos services</Title>
             <ul>
               <li>
-                <a>Marketing digital</a>
-                <a>création de sites Web</a>
-                <a>Referencement</a>
+                <Link href="https://www.dubaniagency.com/marketing-digital">Marketing digital</Link>
+                <Link href="https://www.dubaniagency.com/creation-de-site-web">création de sites Web</Link>
+               
+                
               </li>
             </ul>
           </Col>
@@ -146,9 +147,8 @@ function Footer() {
             <Title niveau={3}>Support</Title>
             <ul>
               <li>
-                <a>A propos de nous</a>
-                <a>Nos Projets</a>
-                <a>Contacts</a>
+                <Link href="https://www.dubaniagency.com/referencement">Referencement</Link>
+                <Link href="https://www.dubaniagency.com/contact">Contact</Link>
               </li>
             </ul>
           </Col>
@@ -162,7 +162,7 @@ function Footer() {
                   </span>
                   Dubani Agency
                 </a>
-                <a hrefl="https://www.instagram.com/dubaniagency/">
+                <a href="https://www.instagram.com/dubaniagency/">
                   <span style={{ fontSize: "25px", marginRight: "10px" }}>
                     <FaInstagram />
                   </span>
