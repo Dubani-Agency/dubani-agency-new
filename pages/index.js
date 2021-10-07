@@ -22,6 +22,7 @@ const Index = (props) => {
 
   return (
     <>
+    
       <PageAccueilSectionAccueil />
       <PageAccueilSectionService className="py-2 py-md-5"/>
       <PageAccueilSectionProjet className="py-2 py-md-5"/>

@@ -65,9 +65,10 @@ function PageAccueilSectionClient() {
             <Row className="my-2 my-md-5">
                     <Col lg={4} className="card1 px-md-4 py-2 py-md-0">
                         <CardClient 
+                            alt="Image du site internet de GSN AUTO"
                             image="/img/PageAccueilSectionClient/image-1.jpg" 
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo du site internet de GSN AUTO" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 GSN AUTO
                             </span>
@@ -88,9 +89,10 @@ function PageAccueilSectionClient() {
                     </Col>
                     <Col lg={4} className="card2 px-md-4 py-2 py-md-0">
                         <CardClient className="mt-0 mt-md-5"
+                            alt="Image du Site internet de WINTECH"
                             image="/img/PageAccueilSectionClient/image-2.jpg" 
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo du Site internet de WINTECH" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 WINTECH
                             </span>
@@ -111,9 +113,10 @@ function PageAccueilSectionClient() {
                     </Col>
                     <Col lg={4} className="card3 mt-0 mt-md-5 px-md-4 py-2 py-md-0">
                         <CardClient className="mt-0 mt-md-5"
+                            alt="Image du Site internet de XPATSA"
                             image="/img/PageAccueilSectionClient/image-3.jpg" 
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo de l'application Web de XPATSA" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 XPATSA
                             </span>

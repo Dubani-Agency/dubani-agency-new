@@ -16,7 +16,7 @@ const items = [
   {
     src: "/img/sectionprojet.png",
     titre:"Jours 1",
-    altText: "Prise de contact",
+    altText: "Prise de contact 1",
     caption: <>
       Une interview de 30 min va être ménée pour mieux évaluer les besoins de votre entreprise et vos objectif 
       quand a votre présence en ligne
@@ -26,7 +26,7 @@ const items = [
   {
     src: "/img/sectionprojet.png",
     titre:"Jours 2",
-    altText: "Prise de contact",
+    altText: "Prise de contact 2",
     caption: <>
       Une interview de 30 min va être ménée pour mieux évaluer les besoins de votre entreprise et vos objectif 
       quand a votre présence en ligne
@@ -36,7 +36,7 @@ const items = [
   {
     src: "/img/sectionprojet.png",
     titre:"Jours 3",
-    altText: "Prise de contact",
+    altText: "Prise de contact 3",
     caption: <>
       Une interview de 30 min va être ménée pour mieux évaluer les besoins de votre entreprise et vos objectif 
       quand a votre présence en ligne
@@ -46,7 +46,7 @@ const items = [
   {
     src: "/img/sectionprojet.png",
     titre:"Jours 4",
-    altText: "Prise de contact",
+    altText: "Prise de contact 4",
     caption: <>
       Une interview de 30 min va être ménée pour mieux évaluer les besoins de votre entreprise et vos objectif 
       quand a votre présence en ligne
@@ -56,7 +56,7 @@ const items = [
   {
     src: "/img/sectionprojet.png",
     titre:"Jours 6",
-    altText: "Prise de contact",
+    altText: "Prise de contact 6",
     caption: <>
       Une interview de 30 min va être ménée pour mieux évaluer les besoins de votre entreprise et vos objectif 
       quand a votre présence en ligne

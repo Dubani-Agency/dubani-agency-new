@@ -70,7 +70,7 @@ function PageAccueilSectionProjet(props) {
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <img src="/img/sectionprojet.png" className="img d-none d-lg-block" width="100%" />
+            <img src="/img/sectionprojet.png" alt="Image de la section Projet de l'agence Dubani agency" className="img d-none d-lg-block" width="100%" />
            <Row className="px-0 px-md-4 block-container-chiffre">
                <Col lg={3} className="py-2 py-md-0 card1">
                     <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />

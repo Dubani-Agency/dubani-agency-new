@@ -49,7 +49,7 @@ function PageAccueilSectionEquipe() {
                 <Row className="py-0 py-md-5">
                     <Col lg={4} className="right right1">
                         <div style={{margin:"auto",display:"block",width:"100%",borderRadius:"100%",overflow:"hidden"}}>
-                            <img src="/img/PageAccueilSectionEquipe/avatar.jpg " width="100%" />
+                            <img src="/img/PageAccueilSectionEquipe/avatar.jpg " alt="Image avatar notre equipe: Dubani agency Team" width="100%" />
                         </div>
                     </Col>
                     <Col lg={8} className="left align-self-center">

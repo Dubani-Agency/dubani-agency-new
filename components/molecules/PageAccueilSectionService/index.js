@@ -97,7 +97,7 @@ function PageAccueilSectionService(props) {
               }
               bouton={
                 <Bouton className="btn my-md-3 my-2">
-                  <Link href="https://www.dubaniagency.com/marketing-digital">
+                  <Link href="/marketing-digital">
                     <BsArrowRight />
                   </Link>
                 </Bouton>
@@ -119,7 +119,7 @@ function PageAccueilSectionService(props) {
               }
               bouton={
                 <Bouton className="btn my-md-3 my-2">
-                  <Link href="https://www.dubaniagency.com/création-de-site-web">
+                  <Link href="/création-de-site-web">
                     <BsArrowRight />
                   </Link>
                 </Bouton>
@@ -159,7 +159,7 @@ function PageAccueilSectionService(props) {
               }
               bouton={
                 <Bouton className="btn my-md-3 my-2">
-                  <Link href="https://www.dubaniagency.com/referencement">
+                  <Link href="/referencement">
                     <BsArrowRight />
                   </Link>
                 </Bouton>

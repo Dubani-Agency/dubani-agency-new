@@ -10,7 +10,7 @@ function CardClient(props) {
     return (
         <CardClientStc>
             <Card className={props.className}>
-               <img src={props.image} style={{width:"100%"}}/>
+               <img src={props.image} alt={props.alt} style={{width:"100%"}}/>
                 <CardBody>
                     <CardTitle className="" tag="h5">{props.title}</CardTitle>
                     <CardText className="my-2 my-md-3">{props.texte}</CardText>

@@ -138,7 +138,7 @@ function PageWebSectionPackage1(props) {
                    <Col md={7} className="pr-md-0">
                     <div className="block px-2 px-md-4 py-2 py-md-4">
                         <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
-                            <img src={img} alt="" width="100%" />
+                            <img src={img} alt="Images illustrant les services de l'agence de communication Dubani agency" width="100%" />
                         </div>
                         <div className="block-caption">
                             <Title niveau={5} className="my-2 my-md-4">

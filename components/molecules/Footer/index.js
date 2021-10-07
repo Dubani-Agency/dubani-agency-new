@@ -53,7 +53,7 @@ function Footer() {
           className="divLogo text-center py-3 py-md-3"
           style={{ margin: "auto", display: "block" }}
         >
-          <img src="/img/logo.svg" className="logo" height="80" />
+          <img src="/img/logo.svg" className="logo" alt="Logo de l'agence de communication Dubani agency" height="80" />
         </div>
         <Row className="row1">
           <Col lg={4}>

@@ -60,8 +60,9 @@ function PageWebSectionProjet(props) {
                 <Col lg={4} className="card1 px-md-4 py-2 py-md-0">
                         <CardClient 
                             image="/img/PageAccueilSectionClient/image-1.jpg" 
+                            alt="Image 2 du site GSN AUTO developpé par L'agence de communication digitale Dubani agency"
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo du site GSN AUTO developpé par L'agence de communication digitale Dubani agency" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 GSN AUTO
                             </span>
@@ -80,9 +81,10 @@ function PageWebSectionProjet(props) {
                     </Col>
                     <Col lg={4} className="card2 px-md-4 py-2 py-md-0">
                         <CardClient className=""
+                        alt="Image 2 du site WINTECH developpé par L'agence de communication digitale Dubani agency"
                             image="/img/PageAccueilSectionClient/image-2.jpg" 
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo du site WINTECH developpé par L'agence de communication digitale Dubani agency" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 WINTECH
                             </span>
@@ -101,9 +103,10 @@ function PageWebSectionProjet(props) {
                     </Col>
                     <Col lg={4} className="card3 px-md-4 py-2 py-md-0">
                         <CardClient className=""
+                        alt="Image 2 du site XPATSA developpé par L'agence de communication digitale Dubani agency"
                             image="/img/PageAccueilSectionClient/image-3.jpg" 
                             title={ <Title niveau={5}>
-                            <img src="/img/logo.svg" height="20" /> 
+                            <img src="/img/logo.svg" alt="Logo du site XPATSA developpé par L'agence de communication digitale Dubani agency" height="20" /> 
                             <span style={{marginLeft:"10px"}}>
                                 XPATSA
                             </span>

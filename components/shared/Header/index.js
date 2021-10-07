@@ -41,7 +41,7 @@ const Header = (props) => {
     <HeaderStc>
       <Navbar expand="md" className="">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <img src="/img/logo.svg" height="40" />
+          <img src="/img/logo.svg" alt="Logo de l'agence de communication  Dubani agency" height="40" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
           <span className="toggle">
@@ -62,7 +62,7 @@ const Header = (props) => {
                 <DropdownItem>
                   <Link
                     class="text-uppercase"
-                    href="https://www.dubaniagency.com/marketing-digital"
+                    href="/marketing-digital"
                   >
                     Marketing digital
                   </Link>
@@ -70,7 +70,7 @@ const Header = (props) => {
                 <DropdownItem>
                   <Link
                     class="text-uppercase"
-                    href="https://www.dubaniagency.com/creation-de-site-web"
+                    href="/creation-de-site-web"
                   >
                     création de site Web
                   </Link>
@@ -78,7 +78,7 @@ const Header = (props) => {
                 <DropdownItem>
                   <Link
                     class="text-uppercase"
-                    href="https://www.dubaniagency.com/referencement"
+                    href="/referencement"
                   >
                     Referencement
                   </Link>
@@ -86,10 +86,10 @@ const Header = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className="py-2 py-md-3 align-self-center text-uppercase">
-              <Link href="https://www.dubaniagency.com/blog/">Blog</Link>
+              <Link href="/blog/">Blog</Link>
             </NavItem>
             <NavItem className="py-2 py-md-3 align-self-center text-uppercase">
-              <Link href="https://www.dubaniagency.com/contact/">Contact</Link>
+              <Link href="/contact/">Contact</Link>
             </NavItem>
           </Nav>
         </Collapse>

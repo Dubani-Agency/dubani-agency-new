@@ -48,7 +48,7 @@ function PageAccueilSectionAccueil() {
                             Avec une agence experte dans la création de site web
                         </Texte>
                         <Bouton className="btn ">
-                            <Link href="https://www.dubaniagency.com/contact/" className="px-2 px-md-5 ">
+                            <Link href="/contact/" className="px-2 px-md-5 ">
                                 Embauchez nous
                             </Link>
                         </Bouton>
