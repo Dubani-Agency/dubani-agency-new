@@ -14,6 +14,8 @@ import {
   NavbarText,
 } from "reactstrap";
 
+import {FaCaretDown} from 'react-icons/fa'
+
 import Link from "next/link";
 
 import HeaderStc from "./Header.stc";
@@ -56,7 +58,7 @@ const Header = (props) => {
               className="py-2 py-md-3 align-self-center"
             >
               <DropdownToggle class="text-uppercase" nav caret>
-                Nos Services
+                Nos Services <span style={{position: "relative",top: "-2px"}}><FaCaretDown/></span>
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>

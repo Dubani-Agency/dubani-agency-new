@@ -37,5 +37,10 @@ li
     font-size: 20px;
     font-weight: 600;
 }
+
+a
+{
+    text-decoration:none !important;
+}
 `;
 export default FooterStc;
