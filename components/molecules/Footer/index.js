@@ -135,8 +135,8 @@ function Footer() {
             <Title niveau={3}>Nos services</Title>
             <ul>
               <li>
-                <Link href="https://www.dubaniagency.com/marketing-digital">Marketing digital</Link>
-                <Link href="https://www.dubaniagency.com/creation-de-site-web">création de sites Web</Link>
+                <Link href="/marketing-digital">Marketing digital</Link>
+                <Link href="/creation-de-site-web">création de sites Web</Link>
                
                 
               </li>
@@ -147,8 +147,8 @@ function Footer() {
             <Title niveau={3}>Support</Title>
             <ul>
               <li>
-                <Link href="https://www.dubaniagency.com/referencement">Referencement</Link>
-                <Link href="https://www.dubaniagency.com/contact">Contact</Link>
+                <Link href="/referencement">Referencement</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </Col>
