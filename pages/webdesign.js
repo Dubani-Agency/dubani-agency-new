@@ -1,4 +1,3 @@
-
 import Banniere1 from "../components/molecules/Banniere1";
 import PageWebSectionAccueil from "../components/molecules/PageWebSectionAccueil";
 import PageWebSectionPackage1 from "../components/molecules/PageWebSectionPackage1";
@@ -16,6 +15,5 @@ const WebDesign = (props) => {
     </>
   );
 };
-
 
 export default WebDesign;
