@@ -71,7 +71,7 @@ function PageContactSectionAccueil() {
     <PageContactSectionAccueilStc className="PageContactSectionAccueil">
       <Row className="pl-0 pl-md-5 ml-0 ml-md-5">
         <Col lg={7} className="align-self-center ">
-          <h1 className="background-overlay">Dubani agency</h1>
+        <DubaniOverlay width="100%" />
           <div
             className="px-2 px-md-5 mx-0 mx-md-5 px-0 px-md-5"
             style={{ position: "relative", zIndex: 1 }}

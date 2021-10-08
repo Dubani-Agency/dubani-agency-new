@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 
-const DubaniOverlayStc=Styled.h1`
+const DubaniOverlayStc=Styled.h2`
     &.background-overlay
     {
         display:none;
@@ -12,7 +12,7 @@ const DubaniOverlayStc=Styled.h1`
             width: 100vw;
             opacity: 0.1;
             color: #159caa;
-            height: 240px;
+            height: 250px;
             overflow: hidden;
             z-index: 0;
             left: -52px;
