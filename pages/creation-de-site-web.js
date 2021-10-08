@@ -10,7 +10,13 @@ const WebDesign = (props) => {
   return (
     <>
       <Head>
-        <title>Dubani Agency | creation de site web </title>
+        <meta
+          name="description"
+          content="information surla creation de site web"
+        />
+        <title>
+          Dubani Agency | La creation de site web dans notre agence web{" "}
+        </title>
       </Head>
       <PageWebSectionAccueil />
       <Banniere1 />

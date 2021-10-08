@@ -1,4 +1,3 @@
-
 import PageMarketingSectionAccueil from "../components/molecules/PageMarketingSectionAccueil";
 import PageMarketingSectionPackage1 from "../components/molecules/PageMarketingSectionPackage1";
 import PageMarketingSectionPackage2 from "../components/molecules/PageMarketingSectionPackage2";
@@ -9,7 +8,13 @@ const MarketingDigital = (props) => {
   return (
     <>
       <Head>
-        <title>Dubani Agency | Marketing digital </title>
+        <meta
+          name="description"
+          content="le marekting digital selon Dubani Agency"
+        />
+        <title>
+          Dubani Agency | Le Marketing digital selon notre agence digitale
+        </title>
       </Head>
       <PageMarketingSectionAccueil />
       <PageMarketingSectionPackage1 className="my-2 my-md-5" />
@@ -18,6 +23,5 @@ const MarketingDigital = (props) => {
     </>
   );
 };
-
 
 export default MarketingDigital;

@@ -1,4 +1,3 @@
-
 import PageReferencementSectionAccueil from "../components/molecules/PageReferencementSectionAccueil";
 import PageReferencementSectionEtape from "../components/molecules/PageReferencementSectionEtape";
 import PageReferencementSectionSeo from "../components/molecules/PageReferencementSectionSeo";
@@ -10,7 +9,8 @@ const Referencement = (props) => {
   return (
     <>
       <Head>
-        <title>Dubani Agency | Referencement </title>
+        <meta name="description" content="le SEO dans note agence digitale" />
+        <title>Dubani Agency | Notre secret sur le referencement </title>
       </Head>
       <PageReferencementSectionAccueil />
       <PageReferencementSectionSeo className="my-2 my-md-5" />
@@ -20,6 +20,5 @@ const Referencement = (props) => {
     </>
   );
 };
-
 
 export default Referencement;

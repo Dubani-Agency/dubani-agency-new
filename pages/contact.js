@@ -2,16 +2,18 @@ import PageContactSectionAccueil from "../components/molecules/PageContactSectio
 import Head from "next/head";
 
 const Contact = (props) => {
-
   return (
     <>
       <Head>
-        <title>Dubani Agency | Contact </title>
+        <meta
+          name="description"
+          content="information de l'agence digital Casablanca"
+        />
+        <title>Dubani Agency | Comment contacter notre agence digitale </title>
       </Head>
       <PageContactSectionAccueil />
     </>
   );
 };
-
 
 export default Contact;

@@ -4,9 +4,10 @@ import PageAccueilSectionEquipe from "../components/molecules/PageAccueilSection
 import PageAccueilSectionProjet from "../components/molecules/PageAccueilSectionProjet";
 import PageAccueilSectionService from "../components/molecules/PageAccueilSectionService";
 import SectionContact from "../components/molecules/SectionContact";
-import Styled from 'styled-components';
+import Styled from "styled-components";
+import Head from "next/head";
 
-const SectionStc=Styled.section`
+const SectionStc = Styled.section`
   background:transparent;
   height:100vh;
   position: absolute;
@@ -19,21 +20,21 @@ const SectionStc=Styled.section`
 `;
 
 const Index = (props) => {
-
   return (
     <>
-    
+      <Head>
+        <meta name="description" content="l'agence digital Casablanca" />
+        <title>Dubani Agency | Notre agence digitale </title>
+      </Head>
       <PageAccueilSectionAccueil />
-      <PageAccueilSectionService className="py-2 py-md-5"/>
-      <PageAccueilSectionProjet className="py-2 py-md-5"/>
-      <PageAccueilSectionClient className="py-2 py-md-5"/>
-      
-      <PageAccueilSectionEquipe className="py-2 py-md-5"/>
-      <SectionContact className="py-2 py-md-5"/>
+      <PageAccueilSectionService className="py-2 py-md-5" />
+      <PageAccueilSectionProjet className="py-2 py-md-5" />
+      <PageAccueilSectionClient className="py-2 py-md-5" />
 
+      <PageAccueilSectionEquipe className="py-2 py-md-5" />
+      <SectionContact className="py-2 py-md-5" />
     </>
   );
 };
-
 
 export default Index;
