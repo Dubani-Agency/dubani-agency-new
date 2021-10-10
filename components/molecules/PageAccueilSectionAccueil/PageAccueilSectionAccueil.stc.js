@@ -1,6 +1,6 @@
-import Styled from 'styled-components'
+import Styled from "styled-components";
 
-const PageAccueilSectionAccueilStc=Styled.section`
+const PageAccueilSectionAccueilStc = Styled.section`
 
     @media (min-width: 991px) {
         height:100vh;
