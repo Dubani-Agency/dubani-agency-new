@@ -13,41 +13,41 @@ import DubaniOverlay from "../../shared/DubaniOverlay";
 gsap.registerPlugin(ScrollTrigger);
 
 function PageAccueilSectionAccueil() {
-  useEffect(() => {
-    let lt = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".PageAccueilSectionAccuel",
-        markers: false,
-        start: "top center",
-        toggleActions: "play none none none",
-      },
-      delay: 0.3,
-    });
+  //   useEffect(() => {
+  //     let lt = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".PageAccueilSectionAccuel",
+  //         markers: false,
+  //         start: "top center",
+  //         toggleActions: "play none none none",
+  //       },
+  //       delay: 0.3,
+  //     });
 
-    lt.from(".PageAccueilSectionAccuel .pageTitle", {
-      y: 100,
-      duration: 0.3,
-      opacity: 0,
-    })
-      .from(".PageAccueilSectionAccuel .MyTitle", {
-        duration: 0.3,
-        opacity: 0,
-        ease: "slow(0.7, 0.7, false)",
-        y: 100,
-      })
-      .from(".PageAccueilSectionAccuel .PageText", {
-        duration: 0.3,
-        opacity: 0,
-        ease: "slow(0.7, 0.7, false)",
-        y: 100,
-      })
-      .from(".PageAccueilSectionAccuel .btn", {
-        duration: 0.3,
-        opacity: 0,
-        ease: "slow(0.7, 0.7, false)",
-        y: 100,
-      });
-  }, []);
+  //     lt.from(".PageAccueilSectionAccuel .pageTitle", {
+  //       y: 100,
+  //       duration: 0.3,
+  //       opacity: 0,
+  //     })
+  //       .from(".PageAccueilSectionAccuel .MyTitle", {
+  //         duration: 0.3,
+  //         opacity: 0,
+  //         ease: "slow(0.7, 0.7, false)",
+  //         y: 100,
+  //       })
+  //       .from(".PageAccueilSectionAccuel .PageText", {
+  //         duration: 0.3,
+  //         opacity: 0,
+  //         ease: "slow(0.7, 0.7, false)",
+  //         y: 100,
+  //       })
+  //       .from(".PageAccueilSectionAccuel .btn", {
+  //         duration: 0.3,
+  //         opacity: 0,
+  //         ease: "slow(0.7, 0.7, false)",
+  //         y: 100,
+  //       });
+  //   }, []);
 
   return (
     <PageAccueilSectionAccueilStc>

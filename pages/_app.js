@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useApollo } from "../apollo/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../containers/Layout";
 import * as gtag from "../lib/gtag";
