@@ -31,8 +31,8 @@ const Index = (props) => {
       <PageAccueilSectionProjet className="py-2 py-md-5" />
       <PageAccueilSectionClient className="py-2 py-md-5" />
 
-      <PageAccueilSectionEquipe className="py-2 py-md-5" />
-      <SectionContact className="py-2 py-md-5" />
+      {/* <PageAccueilSectionEquipe className="py-2 py-md-5" />
+      <SectionContact className="py-2 py-md-5" /> */}
     </>
   );
 };
