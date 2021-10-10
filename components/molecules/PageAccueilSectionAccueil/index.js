@@ -26,23 +26,23 @@ function PageAccueilSectionAccueil() {
 
     lt.from(".PageAccueilSectionAccuel .pageTitle", {
       y: 100,
-      duration: 1,
+      duration: 0.3,
       opacity: 0,
     })
       .from(".PageAccueilSectionAccuel .MyTitle", {
-        duration: 1,
+        duration: 0.3,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .PageText", {
-        duration: 1,
+        duration: 0.3,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .btn", {
-        duration: 1,
+        duration: 0.3,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
