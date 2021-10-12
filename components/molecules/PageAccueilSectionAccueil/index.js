@@ -8,6 +8,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DubaniOverlay from "../../shared/DubaniOverlay";
+import Image from 'next/image'
 // import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
 
 gsap.registerPlugin(ScrollTrigger);
@@ -76,7 +77,9 @@ function PageAccueilSectionAccueil() {
           lg={5}
           className="px-md-0 right d-none d-lg-block align-self-center"
         >
-          <div className="PageAccueilSectionAccueilCover"></div>
+          <div className="PageAccueilSectionAccueilCover">
+            <Image src="/img/webd.svg" width="500" height="100" />
+          </div>
         </Col>
       </Row>
     </PageAccueilSectionAccueilStc>

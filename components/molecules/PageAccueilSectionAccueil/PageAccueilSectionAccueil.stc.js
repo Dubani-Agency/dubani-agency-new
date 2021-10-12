@@ -25,20 +25,20 @@ const PageAccueilSectionAccueilStc = Styled.section`
 
      .right
      {
-         background:url(/img/webd.svg);
+        //  background:url(/img/webd.svg);
          background-size:cover;
          height:100vh;
-         -webkit-animation-name: backgroundEffect;
-         animation-duration: 30s;
-         animation-iteration-count: infinite;
+        //  -webkit-animation-name: backgroundEffect;
+        //  animation-duration: 30s;
+        //  animation-iteration-count: infinite;
      }
      .PageAccueilSectionAccueilCover
       {
         background: #1530aa;
         height: 100vh;
         width: 0%;
-        -webkit-animation-name: coverAnimation;
-         animation-duration: 3s;
+        // -webkit-animation-name: coverAnimation;
+        //  animation-duration: 3s;
       }
 
      @keyframes backgroundEffect {
