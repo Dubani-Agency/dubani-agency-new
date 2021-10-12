@@ -4,12 +4,11 @@ import {Container,Row,Col} from 'reactstrap';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
 import CardProjet from '../CardProjet';
-import Bouton from '../../shared/Bouton';
-import {BsArrowRight} from 'react-icons/bs'
 import { useState } from 'react';
 import Chiffre from '../../shared/Chiffre';
 import { useEffect} from 'react'
 import {gsap} from 'gsap';
+import Image from 'next/image';
 
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -70,7 +69,9 @@ function PageAccueilSectionProjet(props) {
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <img src="/img/sectionprojet.png" alt="Image de la section Projet de l'agence Dubani agency" className="img d-none d-lg-block" width="100%" />
+            <div className="py-md-2 d-none d-lg-block img" style={{height:"400px",width:"100%"}}>
+                <Image src="/img/sectionprojet.png" layout="fill" alt="Image de la section Projet de l'agence Dubani agency" className="" />
+            </div>
            <Row className="px-0 px-md-4 block-container-chiffre">
                <Col lg={3} className="py-2 py-md-0 card1">
                     <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
