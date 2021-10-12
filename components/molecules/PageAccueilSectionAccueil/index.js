@@ -5,6 +5,7 @@ import Texte from "../../shared/Texte";
 import Title from "../../shared/Title";
 import PageAccueilSectionAccueilStc from "./PageAccueilSectionAccueil.stc";
 import Link from "next/link";
+import Image from 'next/image';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DubaniOverlay from "../../shared/DubaniOverlay";
@@ -24,7 +25,13 @@ function PageAccueilSectionAccueil() {
       delay: 0.3,
     });
 
-    lt.from(".PageAccueilSectionAccuel .pageTitle", {
+    lt.from(".PageAccueilSectionAccuel .right", {
+      duration: 1,
+      opacity: 0,
+      ease: "slow(0.7, 0.7, false)",
+      x:100,
+    })
+    .from(".PageAccueilSectionAccuel .pageTitle", {
       y: 100,
       duration: 1,
       opacity: 0,
@@ -76,7 +83,7 @@ function PageAccueilSectionAccueil() {
           lg={5}
           className="px-md-0 right d-none d-lg-block align-self-center"
         >
-          <div className="PageAccueilSectionAccueilCover"></div>
+          <Image src="/img/webd.svg" layout="fill" />
         </Col>
       </Row>
     </PageAccueilSectionAccueilStc>

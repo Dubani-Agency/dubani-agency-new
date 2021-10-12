@@ -6,22 +6,17 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from "reactstrap";
-
-import { FaCaretDown } from "react-icons/fa";
 
 import Link from "next/link";
 
 import HeaderStc from "./Header.stc";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import Router from "next/router";
 import { useRouter } from "next/router";
 
 const Header = (props) => {
@@ -63,9 +58,7 @@ const Header = (props) => {
             >
               <DropdownToggle className="text-uppercase" nav caret>
                 Nos Services{" "}
-                <span style={{ position: "relative", top: "-2px" }}>
-                  <FaCaretDown />
-                </span>
+                
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
