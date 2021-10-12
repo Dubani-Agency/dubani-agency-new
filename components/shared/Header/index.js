@@ -14,7 +14,7 @@ import {
   NavbarText,
 } from "reactstrap";
 
-import {FaCaretDown} from 'react-icons/fa'
+import { FaCaretDown } from "react-icons/fa";
 
 import Link from "next/link";
 
@@ -43,7 +43,11 @@ const Header = (props) => {
     <HeaderStc>
       <Navbar expand="md" className="">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <img src="/img/logo.svg" alt="Logo de l'agence de communication  Dubani agency" height="40" />
+          <img
+            src="/img/logo.svg"
+            alt="Logo de l'agence de communication  Dubani agency"
+            height="40"
+          />
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
           <span className="toggle">
@@ -57,31 +61,25 @@ const Header = (props) => {
               inNavbar
               className="py-2 py-md-3 align-self-center"
             >
-              <DropdownToggle class="text-uppercase" nav caret>
-                Nos Services <span style={{position: "relative",top: "-2px"}}><FaCaretDown/></span>
+              <DropdownToggle className="text-uppercase" nav caret>
+                Nos Services{" "}
+                <span style={{ position: "relative", top: "-2px" }}>
+                  <FaCaretDown />
+                </span>
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link
-                    class="text-uppercase"
-                    href="/marketing-digital"
-                  >
+                  <Link className="text-uppercase" href="/marketing-digital">
                     Marketing digital
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link
-                    class="text-uppercase"
-                    href="/creation-de-site-web"
-                  >
+                  <Link className="text-uppercase" href="/creation-de-site-web">
                     création de site Web
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link
-                    class="text-uppercase"
-                    href="/referencement"
-                  >
+                  <Link className="text-uppercase" href="/referencement">
                     Referencement
                   </Link>
                 </DropdownItem>

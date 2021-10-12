@@ -13,41 +13,41 @@ import DubaniOverlay from "../../shared/DubaniOverlay";
 gsap.registerPlugin(ScrollTrigger);
 
 function PageAccueilSectionAccueil() {
-  //   useEffect(() => {
-  //     let lt = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".PageAccueilSectionAccuel",
-  //         markers: false,
-  //         start: "top center",
-  //         toggleActions: "play none none none",
-  //       },
-  //       delay: 0.3,
-  //     });
+  useEffect(() => {
+    let lt = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".PageAccueilSectionAccuel",
+        markers: false,
+        start: "top center",
+        toggleActions: "play none none none",
+      },
+      delay: 0.3,
+    });
 
-  //     lt.from(".PageAccueilSectionAccuel .pageTitle", {
-  //       y: 100,
-  //       duration: 0.3,
-  //       opacity: 0,
-  //     })
-  //       .from(".PageAccueilSectionAccuel .MyTitle", {
-  //         duration: 0.3,
-  //         opacity: 0,
-  //         ease: "slow(0.7, 0.7, false)",
-  //         y: 100,
-  //       })
-  //       .from(".PageAccueilSectionAccuel .PageText", {
-  //         duration: 0.3,
-  //         opacity: 0,
-  //         ease: "slow(0.7, 0.7, false)",
-  //         y: 100,
-  //       })
-  //       .from(".PageAccueilSectionAccuel .btn", {
-  //         duration: 0.3,
-  //         opacity: 0,
-  //         ease: "slow(0.7, 0.7, false)",
-  //         y: 100,
-  //       });
-  //   }, []);
+    lt.from(".PageAccueilSectionAccuel .pageTitle", {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+    })
+      .from(".PageAccueilSectionAccuel .MyTitle", {
+        duration: 1,
+        opacity: 0,
+        ease: "slow(0.7, 0.7, false)",
+        y: 100,
+      })
+      .from(".PageAccueilSectionAccuel .PageText", {
+        duration: 1,
+        opacity: 0,
+        ease: "slow(0.7, 0.7, false)",
+        y: 100,
+      })
+      .from(".PageAccueilSectionAccuel .btn", {
+        duration: 1,
+        opacity: 0,
+        ease: "slow(0.7, 0.7, false)",
+        y: 100,
+      });
+  }, []);
 
   return (
     <PageAccueilSectionAccueilStc>
@@ -58,7 +58,7 @@ function PageAccueilSectionAccueil() {
             className="px-2 px-md-5 mx-0 mx-md-5 px-0 px-md-5"
             style={{ position: "relative", zIndex: 1 }}
           >
-            <Title className="pageTitle py-2 py-md-3">Dubani Agency2</Title>
+            <Title className="pageTitle py-2 py-md-3">Dubani Agency</Title>
             <Title niveau={1} className="MyTitle">
               Créer un site web personnalisée pour générer plus de trafic
             </Title>

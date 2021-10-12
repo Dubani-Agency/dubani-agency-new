@@ -25,7 +25,7 @@ const PageAccueilSectionAccueilStc = Styled.section`
 
      .right
      {
-         background:url(/img/web.svg);
+         background:url(/img/webd.svg);
          background-size:cover;
          height:100vh;
          -webkit-animation-name: backgroundEffect;
