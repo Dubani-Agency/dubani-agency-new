@@ -5,7 +5,7 @@ import Texte from "../../shared/Texte";
 import Title from "../../shared/Title";
 import PageAccueilSectionAccueilStc from "./PageAccueilSectionAccueil.stc";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DubaniOverlay from "../../shared/DubaniOverlay";
@@ -22,34 +22,34 @@ function PageAccueilSectionAccueil() {
         start: "top center",
         toggleActions: "play none none none",
       },
-      delay: 0.3,
+      delay: 0.1,
     });
 
     lt.from(".PageAccueilSectionAccuel .right", {
       duration: 0.5,
       opacity: 0,
       ease: "slow(0.7, 0.7, false)",
-      x:100,
+      x: 100,
     })
-    .from(".PageAccueilSectionAccuel .pageTitle", {
-      y: 100,
-      duration: 0.5,
-      opacity: 0,
-    })
+      .from(".PageAccueilSectionAccuel .pageTitle", {
+        y: 100,
+        duration: 0.2,
+        opacity: 0,
+      })
       .from(".PageAccueilSectionAccuel .MyTitle", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .PageText", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .btn", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
