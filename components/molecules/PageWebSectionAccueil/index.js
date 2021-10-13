@@ -5,12 +5,9 @@ import Texte from "../../shared/Texte";
 import Title from "../../shared/Title";
 import PageWebSectionAccueilStc from "./PageWebSectionAccueil.stc";
 import Link from "next/link";
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image';
 import DubaniOverlay from "../../shared/DubaniOverlay";
-// import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
-gsap.registerPlugin(ScrollTrigger);
+import {gsap} from 'gsap';
 
 function PageWebSectionAccueil() {
   useEffect(() => {
@@ -26,41 +23,41 @@ function PageWebSectionAccueil() {
 
     lt.from(".PageWebSectionAccueil .pageTitle", {
       y: 100,
-      duration: 1,
+      duration: 0.2,
       opacity: 0,
     })
       .from(".PageWebSectionAccueil .MyTitle", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageWebSectionAccueil .PageText", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageWebSectionAccueil .btn", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageWebSectionAccueil .img1", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: -100,
       })
       .from(".PageWebSectionAccueil .img2", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: 100,
       })
       .from(".PageWebSectionAccueil .img3", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: -100,
@@ -69,10 +66,11 @@ function PageWebSectionAccueil() {
 
   return (
     <PageWebSectionAccueilStc>
+      <DubaniOverlay width="100%" />
       <Container className="PageWebSectionAccueil">
         <Row className="pt-0 pt-md-0 mt-0 mt-md-0">
           <Col lg={7} className="align-self-center py-0 py-md-5 mt-0 mt-md-5">
-            <DubaniOverlay width="100%" />
+            
             <div className="" style={{ position: "relative", zIndex: 1 }}>
               <Title className="pageTitle py-2 py-md-3">Web design</Title>
               <Title niveau={1} className="MyTitle">
@@ -96,28 +94,39 @@ function PageWebSectionAccueil() {
               </Bouton>
             </div>
           </Col>
-          <Col lg={5} className="right d-none d-lg-block py-0 py-md-5 ">
-            <img
-              src="/img/web-1.png"
-              alt="Maquette Web design, exemple dubani 1"
-              className="img1"
-              width="100%"
-              style={{ position: "absolute", left: "0px", top: "100px" }}
-            />
-            <img
-              src="/img/web-2.png"
-              alt="Maquette Web design, exemple dubani 2"
-              className="img2"
-              width="100%"
-              style={{ position: "absolute", left: "0px", top: "100px" }}
-            />
-            <img
-              src="/img/web-3.png"
-              alt="Maquette Web design, exemple dubani 3"
-              className="img3"
-              width="100%"
-              style={{ position: "absolute", left: "0px", top: "100px" }}
-            />
+          <Col lg={5} className="right d-none d-lg-block pt-0 pt-md-5">
+            <div style={{position:"absolute"}}>
+              <Image
+                src="/img/web-1.png"
+                alt="Maquette Web design, exemple dubani 1"
+                className="img1"
+                width="400"
+                height="350"
+                style={{ position: "absolute", left: "0px", top: "100px" }}
+              />
+            </div>
+            <div style={{position:"absolute"}}>
+              <Image
+                src="/img/web-2.png"
+                alt="Maquette Web design, exemple dubani 2"
+                className="img2"
+                width="400"
+                height="350"
+                style={{ position: "absolute", left: "0px", top: "100px" }}
+              />
+            </div>
+            <div style={{position:"absolute"}}>
+              <Image
+                src="/img/web-3.png"
+                alt="Maquette Web design, exemple dubani 3"
+                className="img3"
+                width="400"
+                height="350"
+                style={{ position: "absolute", left: "0px", top: "100px" }}
+              />
+            </div>
+           
+            
           </Col>
         </Row>
       </Container>

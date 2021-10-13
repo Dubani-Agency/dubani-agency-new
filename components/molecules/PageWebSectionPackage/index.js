@@ -29,10 +29,10 @@ function PageWebSectionPackage() {
             },
             delay:.3});
         
-            lt.from(".PageWebSectionPackage .pageTitle",{ y:100,duration:1,opacity:0,})
-            .from ('.PageWebSectionPackage .MyTitle',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageWebSectionPackage .PageText',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageWebSectionPackage .row-caroussel',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageWebSectionPackage .pageTitle",{ y:100,duration:0.2,opacity:0,})
+            .from ('.PageWebSectionPackage .MyTitle',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageWebSectionPackage .PageText',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageWebSectionPackage .row-caroussel',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 

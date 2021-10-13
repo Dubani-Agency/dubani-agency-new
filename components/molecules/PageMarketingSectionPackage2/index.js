@@ -30,14 +30,14 @@ function PageMarketingSectionPackage2(props) {
             },
             delay:.3});
         
-            lt.from(".PageMarketingSectionPackage2 .pageTitle",{ y:100,duration:1,opacity:0,})
-            .from ('.PageMarketingSectionPackage2 .MyTitle',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .PageText',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .btn',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .card1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .card2',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .card3',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage2 .card4',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageMarketingSectionPackage2 .pageTitle",{ y:100,duration:0.2,opacity:0,})
+            .from ('.PageMarketingSectionPackage2 .MyTitle',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .PageText',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .btn',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .card1',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .card2',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .card3',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage2 .card4',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 

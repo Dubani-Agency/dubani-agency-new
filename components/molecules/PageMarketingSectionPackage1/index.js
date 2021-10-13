@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import {Container,Row,Col} from 'reactstrap';
-import Bouton from '../../shared/Bouton';
-import Texte from '../../shared/Texte';
 import Title from '../../shared/Title';
 import PageMarketingSectionPackage1Stc from './PageMarketingSectionPackage1.stc'
 import {AiOutlineCheckCircle} from 'react-icons/ai'
@@ -26,17 +24,17 @@ function PageMarketingSectionPackage1(props) {
             },
             delay:.3});
         
-            lt.from(".PageMarketingSectionPackage1 .pageTitle",{ y:100,duration:1,opacity:0,})
-            .from ('.PageMarketingSectionPackage1 .MyTitle',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .PageText',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .btn',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .package-img',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 40 })
-            .from ('.PageMarketingSectionPackage1 .img',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
-            .from ('.PageMarketingSectionPackage1 .li1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .li2',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .li3',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .li4',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageMarketingSectionPackage1 .li5',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageMarketingSectionPackage1 .pageTitle",{ y:100,duration:0.2,opacity:0,})
+            .from ('.PageMarketingSectionPackage1 .MyTitle',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .PageText',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .btn',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .package-img',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 40 })
+            .from ('.PageMarketingSectionPackage1 .img',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+            .from ('.PageMarketingSectionPackage1 .li1',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .li2',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .li3',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .li4',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageMarketingSectionPackage1 .li5',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 

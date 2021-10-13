@@ -23,9 +23,9 @@ function Banniere1(props) {
             },
             delay:.3});
         
-            lt.from(".Banniere1 .container-image",{ y:100,duration:0.5,opacity:0,})
+            lt.from(".Banniere1 .container-image",{ y:100,duration:0.2,opacity:0,})
             .from ('.Banniere1 .img',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.Banniere1 .container-but',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.Banniere1 .container-but',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 

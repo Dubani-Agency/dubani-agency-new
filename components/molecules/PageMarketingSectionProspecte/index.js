@@ -6,7 +6,7 @@ function PageMarketingSectionProspecte(props) {
 
     return (
         <PageMarketingSectionProspecteStc className={props.className}>
-            <Image src="/img/img5.png" alt="Signature d'un contrat stratégique" layout="fill" className="d-none d-lg-block" />
+            <Image src="/img/img5.png" alt="Signature d'un contrat stratégique" height="700" width="2000" className="d-none d-lg-block" />
         </PageMarketingSectionProspecteStc>
     )
 }
