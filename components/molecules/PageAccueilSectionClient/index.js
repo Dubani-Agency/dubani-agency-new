@@ -31,12 +31,12 @@ function PageAccueilSectionClient() {
             },
             delay:.3});
         
-            lt.from(".PageAccueilSectionClient .pageTitle",{ y:100,duration:0.5,opacity:0,})
-            .from ('.PageAccueilSectionClient .MyTitle',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionClient .PageText',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionClient .card1',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionClient .card2',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionClient .card3',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageAccueilSectionClient .pageTitle",{ y:100,duration:0.2,opacity:0,})
+            .from ('.PageAccueilSectionClient .MyTitle',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionClient .PageText',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionClient .card1',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionClient .card2',{duration:.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionClient .card3',{duration:.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 

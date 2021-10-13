@@ -45,7 +45,7 @@ const PageAccueilSectionProjetStc=Styled.section`
     {
         @media (min-width: 991px) {
            margin-top:100px;
-           height:568px;
+           height:415px;
         }
 
         background:#1530aa;

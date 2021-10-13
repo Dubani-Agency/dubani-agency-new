@@ -22,8 +22,9 @@ const CardProjetStc=Styled.div`
     .card
     {
         border-radius: 30px;
-        box-shadow: 0px 0px 16px #ccc;
+        box-shadow: 0px 6px 16px #000;
         border:0px;
+        min-width:235px;
         @media (min-width: 991px) {
             margin: 30px 15px;
          }
@@ -32,7 +33,7 @@ const CardProjetStc=Styled.div`
          .card-body
          {
             @media (min-width: 991px) {
-                padding: 4em 1.25rem;
+                padding: 2em 0.25rem;
              }
             
             

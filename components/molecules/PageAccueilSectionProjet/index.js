@@ -26,14 +26,14 @@ function PageAccueilSectionProjet(props) {
             },
             delay:.3});
         
-            lt.from(".PageAccueilSectionProjet .pageTitle",{ y:100,duration:0.5,opacity:0,})
-            .from ('.PageAccueilSectionProjet .MyTitle',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .PageText',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .img',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .card1',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .card2',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .card3',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .card4',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageAccueilSectionProjet .pageTitle",{ y:100,duration:0.2,opacity:0,})
+            .from ('.PageAccueilSectionProjet .MyTitle',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .PageText',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .img',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .card1',{duration:0.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .card2',{duration:.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .card3',{duration:.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .card4',{duration:.2,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 
@@ -70,25 +70,27 @@ function PageAccueilSectionProjet(props) {
                 </Row>
             </Container>
     
-            <Row className="px-0 px-md-4 block-container-chiffre">
-                <Col lg={6}>
-                    <div className=" d-none d-lg-block" style={{height:"300px"}}>
-                        <Image src="/img/banner.svg" layout="fill" alt="Banner projet dubani" />
-                    </div>
-                </Col>
-                <Col lg={6}>
-                    <Row>
-                        <Col lg={6}>
-                            <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
-                            <CardProjet texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
+            <section className="block-container-chiffre">
+                <Container>
+                    <Row className="px-0 px-md-4">
+                        <Col lg={6} className="img d-none d-lg-block">
+                            <Image src="/img/banner.svg" width="900" height="800" alt="Banner projet dubani" />
                         </Col>
-                        <Col lg={6} className="pt-0 pt-md-5">
-                            <CardProjet texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
-                            <CardProjet texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
+                        <Col lg={6}>
+                            <Row>
+                                <Col lg={6}>
+                                    <CardProjet className="card1" texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
+                                    <CardProjet className="card2" texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
+                                </Col>
+                                <Col lg={6} className="pt-0 pt-md-5">
+                                    <CardProjet className="card3" texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
+                                    <CardProjet className="card4" texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
-                </Col>
-            </Row>
+                </Container>
+            </section>
         </PageAccueilSectionProjetStc>
     )
 }

@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-const BoutonStc=Styled.button`
+const BoutonStc=Styled.a`
     background:#1530aa;
     color:#fff;
     a
@@ -9,7 +9,9 @@ const BoutonStc=Styled.button`
     }
     &:hover
     {
+        background: #64c5ea;
         color:#fff;
+        transition:.5s
     }
 `;
 export default BoutonStc;

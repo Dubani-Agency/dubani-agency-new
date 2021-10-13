@@ -27,41 +27,41 @@ function PageAccueilSectionService(props) {
 
     lt.from(".PageAccueilSectionService .pageTitle", {
       y: 100,
-      duration: 0.5,
+      duration: 0.2,
       opacity: 0,
     })
       .from(".PageAccueilSectionService .MyTitle", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .PageText", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .card1", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .card2", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .card3", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .card4", {
-        duration: 0.5,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
@@ -96,10 +96,8 @@ function PageAccueilSectionService(props) {
                 </p>
               }
               bouton={
-                <Bouton className="btn my-md-3 my-2">
-                  <Link href="/marketing-digital">
+                <Bouton href="/marketing-digital" className="btn my-md-3 my-2">
                     <BsArrowRight />
-                  </Link>
                 </Bouton>
               }
             />
@@ -118,10 +116,8 @@ function PageAccueilSectionService(props) {
                 </p>
               }
               bouton={
-                <Bouton className="btn my-md-3 my-2">
-                  <Link href="/création-de-site-web">
+                <Bouton href="/création-de-site-web" className="btn my-md-3 my-2">
                     <BsArrowRight />
-                  </Link>
                 </Bouton>
               }
             />
@@ -158,10 +154,8 @@ function PageAccueilSectionService(props) {
                 </p>
               }
               bouton={
-                <Bouton className="btn my-md-3 my-2">
-                  <Link href="/referencement">
+                <Bouton href="/referencement" className="btn my-md-3 my-2">
                     <BsArrowRight />
-                  </Link>
                 </Bouton>
               }
             />

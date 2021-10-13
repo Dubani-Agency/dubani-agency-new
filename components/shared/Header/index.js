@@ -12,6 +12,8 @@ import {
   DropdownItem,
 } from "reactstrap";
 
+import Image from 'next/image';
+
 import Link from "next/link";
 
 import HeaderStc from "./Header.stc";
@@ -36,13 +38,15 @@ const Header = (props) => {
 
   return (
     <HeaderStc>
-      <Navbar expand="md" className="">
-        <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <img
-            src="/img/logo.svg"
-            alt="Logo de l'agence de communication  Dubani agency"
-            height="40"
-          />
+      <Navbar expand="md" className="container">
+        <NavbarBrand href="/" className="">
+            <Image
+                src="/img/logo.svg"
+                alt="Logo de l'agence de communication  Dubani agency"
+                width="100"
+                height="80"
+              />
+          
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
           <span className="toggle">

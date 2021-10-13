@@ -3,7 +3,7 @@ import BoutonStc from './Bouton.stc'
 
 function Bouton(props) {
     return (
-        <BoutonStc className={props.className} >
+        <BoutonStc href={props.href} className={props.className} >
             {props.children}
         </BoutonStc>
     )

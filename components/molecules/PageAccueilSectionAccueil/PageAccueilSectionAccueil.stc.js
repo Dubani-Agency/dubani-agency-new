@@ -55,8 +55,11 @@ const PageAccueilSectionAccueilStc = Styled.section`
       {
         height: 100vh;
         background: #1530aa;
-        width: 65%;
+        width: 40%;
         float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
 `;
 export default PageAccueilSectionAccueilStc;

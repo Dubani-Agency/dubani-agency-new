@@ -9,6 +9,7 @@ import Texte from "../../shared/Texte";
 import Link from 'next/link'
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -25,21 +26,21 @@ function Footer() {
       delay: 0.3,
     });
 
-    lt.from(".Footer .logo", { y: 100, duration: 1, opacity: 0 })
+    lt.from(".Footer .logo", { y: 100, duration: 0.2, opacity: 0 })
       .from(".Footer .row1", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: -100,
       })
       .from(".Footer .trait", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: 100,
       })
       .from(".Footer .row2", {
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         x: -100,
@@ -53,7 +54,7 @@ function Footer() {
           className="divLogo text-center py-3 py-md-3"
           style={{ margin: "auto", display: "block" }}
         >
-          <img src="/img/logo.svg" className="logo" alt="Logo de l'agence de communication Dubani agency" height="80" />
+          <Image src="/img/logo.svg" className="logo" alt="Logo de l'agence de communication Dubani agency" width="120" height="120" />
         </div>
         <Row className="row1">
           <Col lg={4}>
