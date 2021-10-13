@@ -61,7 +61,7 @@ function PageWebSectionPackage() {
             <Row className="my-2 my-md-5 row-caroussel">
                 <Col lg={12} className="px-md-4 py-2 py-md-0 " >
                     <MyCaroussel/>
-                </Col>
+                </Col> 
             </Row>
         </PageWebSectionPackageStc>
     )
