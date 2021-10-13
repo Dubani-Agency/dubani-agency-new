@@ -44,8 +44,11 @@ const PageAccueilSectionProjetStc=Styled.section`
     .block-container-chiffre
     {
         @media (min-width: 991px) {
-           margin-top:-100px;
+           margin-top:100px;
+           height:568px;
         }
+
+        background:#1530aa;
     }
 `;
 export default PageAccueilSectionProjetStc;

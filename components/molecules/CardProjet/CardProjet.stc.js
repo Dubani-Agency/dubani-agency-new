@@ -24,6 +24,19 @@ const CardProjetStc=Styled.div`
         border-radius: 30px;
         box-shadow: 0px 0px 16px #ccc;
         border:0px;
+        @media (min-width: 991px) {
+            margin: 30px 15px;
+         }
+        
+
+         .card-body
+         {
+            @media (min-width: 991px) {
+                padding: 4em 1.25rem;
+             }
+            
+            
+         }
     }
 
     .icon

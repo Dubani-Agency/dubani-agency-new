@@ -51,6 +51,12 @@ const PageAccueilSectionAccueilStc = Styled.section`
         100% {width:0%;background: transparent;}
       }
 
-      
+      .cover1
+      {
+        height: 100vh;
+        background: #1530aa;
+        width: 65%;
+        float: right;
+      }
 `;
 export default PageAccueilSectionAccueilStc;

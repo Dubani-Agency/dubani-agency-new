@@ -27,23 +27,23 @@ function PageAccueilSectionService(props) {
 
     lt.from(".PageAccueilSectionService .pageTitle", {
       y: 100,
-      duration: 1,
+      duration: 0.5,
       opacity: 0,
     })
       .from(".PageAccueilSectionService .MyTitle", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .PageText", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionService .card1", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,

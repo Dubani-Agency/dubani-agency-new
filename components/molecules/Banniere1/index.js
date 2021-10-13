@@ -7,6 +7,7 @@ import {AiOutlineCheckCircle} from 'react-icons/ai'
 import {gsap} from 'gsap';
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 // import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+import Image from "next/image"
 gsap.registerPlugin(ScrollTrigger);
 
 function Banniere1(props) {
@@ -22,9 +23,9 @@ function Banniere1(props) {
             },
             delay:.3});
         
-            lt.from(".Banniere1 .container-image",{ y:100,duration:1,opacity:0,})
-            .from ('.Banniere1 .img',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.Banniere1 .container-but',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".Banniere1 .container-image",{ y:100,duration:0.5,opacity:0,})
+            .from ('.Banniere1 .img',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.Banniere1 .container-but',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             
     }, []);
 
@@ -32,9 +33,11 @@ function Banniere1(props) {
         <Banniere1Stc className={"Banniere1 "+props.className}>
             <div className="sectionApres">
                 <div className="container container-image my-2 my-md-0">
-                    <Row className="mx-0">
-                        <Col lg={7}>
-                            <img src="/img/img6.png" alt="Image d'un site Web dans un ordinateur" className="img d-none d-lg-block"  />
+                    <Row className="mx-0" >
+                        <Col lg={7} >
+                            <div style={{height:"385px"}} className="d-none d-lg-block">
+                                <Image src="/img/img6.png" layout="fill" alt="Image d'un site Web dans un ordinateur" className="img "  />
+                            </div>
                         </Col>
                         <Col lg={5}>
                             <div className="container-but my-2 my-4 mx-2 mx-md-4 py-2 py-md-4 px-2 px-md-4 align-self-center" style={{background:"#fff"}}>

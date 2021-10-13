@@ -26,11 +26,11 @@ function PageAccueilSectionProjet(props) {
             },
             delay:.3});
         
-            lt.from(".PageAccueilSectionProjet .pageTitle",{ y:100,duration:1,opacity:0,})
-            .from ('.PageAccueilSectionProjet .MyTitle',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .PageText',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .img',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.PageAccueilSectionProjet .card1',{duration:1,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from(".PageAccueilSectionProjet .pageTitle",{ y:100,duration:0.5,opacity:0,})
+            .from ('.PageAccueilSectionProjet .MyTitle',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .PageText',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .img',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.PageAccueilSectionProjet .card1',{duration:0.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.PageAccueilSectionProjet .card2',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.PageAccueilSectionProjet .card3',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.PageAccueilSectionProjet .card4',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
@@ -69,21 +69,24 @@ function PageAccueilSectionProjet(props) {
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <div className="py-md-2 d-none d-lg-block img" style={{height:"500px",width:"100%"}}>
-                <Image src="/img/sectionprojet.png" layout="fill" alt="Image de la section Projet de l'agence Dubani agency" className="" />
-            </div>
+    
             <Row className="px-0 px-md-4 block-container-chiffre">
-                <Col lg={3} className="py-2 py-md-0 card1">
-                        <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
+                <Col lg={6}>
+                    <div className=" d-none d-lg-block" style={{height:"300px"}}>
+                        <Image src="/img/banner.svg" layout="fill" alt="Banner projet dubani" />
+                    </div>
                 </Col>
-                <Col lg={3} className="py-2 py-md-0 card2">
-                        <CardProjet texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
-                </Col>
-                <Col lg={3} className="py-2 py-md-0 card3">
-                        <CardProjet texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
-                </Col>
-                <Col lg={3} className="py-2 py-md-0 card4">
-                        <CardProjet texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
+                <Col lg={6}>
+                    <Row>
+                        <Col lg={6}>
+                            <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
+                            <CardProjet texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
+                        </Col>
+                        <Col lg={6} className="pt-0 pt-md-5">
+                            <CardProjet texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
+                            <CardProjet texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </PageAccueilSectionProjetStc>

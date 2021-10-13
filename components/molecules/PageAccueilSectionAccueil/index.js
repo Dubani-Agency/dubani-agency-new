@@ -26,30 +26,30 @@ function PageAccueilSectionAccueil() {
     });
 
     lt.from(".PageAccueilSectionAccuel .right", {
-      duration: 1,
+      duration: 0.5,
       opacity: 0,
       ease: "slow(0.7, 0.7, false)",
       x:100,
     })
     .from(".PageAccueilSectionAccuel .pageTitle", {
       y: 100,
-      duration: 1,
+      duration: 0.5,
       opacity: 0,
     })
       .from(".PageAccueilSectionAccuel .MyTitle", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .PageText", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
       })
       .from(".PageAccueilSectionAccuel .btn", {
-        duration: 1,
+        duration: 0.5,
         opacity: 0,
         ease: "slow(0.7, 0.7, false)",
         y: 100,
@@ -83,7 +83,8 @@ function PageAccueilSectionAccueil() {
           lg={5}
           className="px-md-0 right d-none d-lg-block align-self-center"
         >
-          <Image src="/img/webd.svg" layout="fill" />
+          <Image src="/img/landing.svg" layout="fill" />
+          <div className="cover1"></div>
         </Col>
       </Row>
     </PageAccueilSectionAccueilStc>
