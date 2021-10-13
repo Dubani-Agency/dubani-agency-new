@@ -9,6 +9,7 @@ import {AiOutlineCheckCircle} from 'react-icons/ai'
 import {gsap} from 'gsap';
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 // import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,10 +60,15 @@ function PageMarketingSectionPackage1(props) {
                     </Col>
                 </Row>
                 </Container>
-
-                <Row className="package-img  my-0 py-2 py-md-5 px-2 px-md-5">
+                <Row className="package-img mx-0 d-none d-lg-block">
+                    <Col lg={12} style={{height:"300px"}}>
+                        <Image src="/img/img4.png" layout="fill" alt="Banniere sur la Reunion strategique en marketing digital" />
+                    </Col>
+                </Row>
+                <Row className="package-img1 my-0 py-2 py-md-5 px-2 px-md-5">
+                    
                     <Col lg={5}>
-                        <img src="/img/img3.png" alt='Reunion strategique en marketing digital' className="img d-none d-lg-block" width="100%" />
+                        <Image src="/img/img3.png" layout="fill" alt='Reunion strategique en marketing digital' className="img d-none d-lg-block" width="100%" />
                     </Col>
                     <Col lg={7}>
                         <ul className="package-ul px-0 px-md-5">
@@ -92,6 +98,7 @@ function PageMarketingSectionPackage1(props) {
                             </li>
                             <li className="li5">
                                 <span>
+
                                     <AiOutlineCheckCircle />
                                 </span>
                                 <span>Un tarif très concurrentiel</span>

@@ -7,13 +7,22 @@ const PageMarketingSectionPackage1Stc=Styled.section`
             height:350px;
         }
        
-        background-image:url(/img/img4.png);
-        background-size:cover;
+        // background-image:url();
+        // background-size:cover;
 
         img
         {
             margin-top:-30px;
         }
+    }
+
+    .package-img1
+    {
+        @media (min-width: 991px) {
+           margin-top:-380px !important;
+           min-height:412px;
+        }
+       
     }
 
     .package-ul

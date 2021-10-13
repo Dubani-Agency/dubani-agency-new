@@ -9,7 +9,6 @@ import Image from 'next/image';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DubaniOverlay from "../../shared/DubaniOverlay";
-import Image from 'next/image'
 // import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
 
 gsap.registerPlugin(ScrollTrigger);

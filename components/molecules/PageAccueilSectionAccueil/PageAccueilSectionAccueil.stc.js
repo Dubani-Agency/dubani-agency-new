@@ -20,9 +20,6 @@ const PageAccueilSectionAccueilStc = Styled.section`
         margin-left:0px !important;
         margin-right:0px !important
     }
-
-    
-
      .right
      {
         margin-top:-15px;

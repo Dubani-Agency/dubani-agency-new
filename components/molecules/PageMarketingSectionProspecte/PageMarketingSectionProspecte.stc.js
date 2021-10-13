@@ -1,6 +1,11 @@
 import Styled from 'styled-components'
 
 const PageMarketingSectionProspecteStc=Styled.section`
+    &{
+        @media (min-width: 991px) {
+            height:400px;
+        }
+    }
     .row
     {
         margin-left:0px !important;
