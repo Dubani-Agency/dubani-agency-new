@@ -83,7 +83,7 @@ function PageAccueilSectionAccueil() {
           lg={5}
           className="px-md-0 right d-none d-lg-block align-self-center"
         >
-          <Image src="/img/webd.svg" layout="fill" />
+          <Image src="/img/home-guy.jpg" layout="fill" />
         </Col>
       </Row>
     </PageAccueilSectionAccueilStc>
