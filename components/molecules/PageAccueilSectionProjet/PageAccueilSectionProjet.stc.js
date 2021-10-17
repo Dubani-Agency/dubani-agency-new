@@ -45,10 +45,11 @@ const PageAccueilSectionProjetStc=Styled.section`
     {
         @media (min-width: 991px) {
            margin-top:100px;
-           height:415px;
+           height:468px;
         }
 
-        background:#1530aa;
+        background-image:url(/img/g456.jpg);
+        background-size:cover;
     }
 `;
 export default PageAccueilSectionProjetStc;

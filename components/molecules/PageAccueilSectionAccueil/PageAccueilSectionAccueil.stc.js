@@ -77,19 +77,16 @@ const PageAccueilSectionAccueilStc = Styled.section`
       .cover1
       {
         height: 100vh;
-        background: #1530aa;
+        background: #394fb5;
         width: 40%;
         float: right;
         position: absolute;
         top: 0;
         right: 0;
-        animation-name: example;
-        animation-duration: 4s;
-      }
-
-      @keyframes example {
-        from {background-color: red;}
-        to {background-color: yellow;}
+        z-index: 9;
+       opacity:0;
+        // animation-name: example;
+        // animation-duration: 4s;
       }
 `;
 export default PageAccueilSectionAccueilStc;

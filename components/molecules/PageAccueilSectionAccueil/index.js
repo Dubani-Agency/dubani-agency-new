@@ -24,17 +24,25 @@ function PageAccueilSectionAccueil() {
       delay: 0.1,
     });
 
-    lt.from(".PageAccueilSectionAccuel .right", {
-      duration: 0.2,
-      opacity: 0,
+    lt.from(".PageAccueilSectionAccuel .cover1", {
+      duration: 1,
+      opacity: 1,
       ease: "slow(0.7, 0.7, false)",
       x: 100,
     })
-      .from(".PageAccueilSectionAccuel .pageTitle", {
-        y: 100,
-        duration: 0.2,
-        opacity: 0,
-      })
+    .from(".PageAccueilSectionAccuel .right", {
+      delay:0,
+      x: 100,
+      duration: 1,
+      opacity: 0,
+      ease: "slow(0.7, 0.7, false)",
+    })
+    .from(".PageAccueilSectionAccuel .pageTitle", {
+      y: 100,
+      duration: 0.2,
+      opacity: 0,
+    })
+
       .from(".PageAccueilSectionAccuel .MyTitle", {
         duration: 0.2,
         opacity: 0,
@@ -56,10 +64,10 @@ function PageAccueilSectionAccueil() {
   }, []);
 
   return (
-    <PageAccueilSectionAccueilStc>
+    <PageAccueilSectionAccueilStc className="PageAccueilSectionAccuel">
        <DubaniOverlay width="70%" />
       <Container>
-        <Row className="PageAccueilSectionAccuel" style={{position:"relative",zIndex:"2"}}>
+        <Row className="" style={{position:"relative",zIndex:"2"}}>
           <Col lg={7} className=" align-self-center ">
            
             <div
@@ -82,11 +90,13 @@ function PageAccueilSectionAccueil() {
             lg={5}
             className="px-md-0 right d-none d-lg-block align-self-center"
           >
-            <Image src="/img/landing.svg" layout="fill" />
+            <Image src="/img/g457.jpg" layout="fill" />
           </Col>
         </Row>
       </Container>
-      <div className="cover1 d-none d-lg-block"></div>
+      <div className="cover1 d-none d-lg-block">
+
+      </div>
     </PageAccueilSectionAccueilStc>
   );
 }
