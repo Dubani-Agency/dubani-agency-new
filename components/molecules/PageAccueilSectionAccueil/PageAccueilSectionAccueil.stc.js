@@ -23,6 +23,12 @@ const PageAccueilSectionAccueilStc = Styled.section`
      .right
      {
         margin-top:-15px;
+<<<<<<< HEAD
+         height:100vh;
+        //  -webkit-animation-name: backgroundEffect;-webkit-animation-name
+        //  animation-duration: 30s;animation-duration
+        //  animation-iteration-count: infinite;animation-iteration-count
+=======
         height:100vh;
 
         &>div
@@ -32,14 +38,15 @@ const PageAccueilSectionAccueilStc = Styled.section`
         }
 
         
+>>>>>>> aefdcbbee9a3ab7694d9ab63422af1f532eb6349
      }
      .PageAccueilSectionAccueilCover
       {
         background: #1530aa;
         height: 100vh;
         width: 0%;
-        // -webkit-animation-name: coverAnimation;
-        //  animation-duration: 3s;
+        // -webkit-animation-name: coverAnimation;-webkit-animation-name
+        //  animation-duration: 3s;animation-duration
       }
 
       @keyframes yo-yo {
