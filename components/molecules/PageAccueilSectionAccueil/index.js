@@ -30,18 +30,18 @@ function PageAccueilSectionAccueil() {
       ease: "slow(0.7, 0.7, false)",
       x: 100,
     })
-    .from(".PageAccueilSectionAccuel .right", {
-      delay:0,
-      x: 100,
-      duration: 1,
-      opacity: 0,
-      ease: "slow(0.7, 0.7, false)",
-    })
-    .from(".PageAccueilSectionAccuel .pageTitle", {
-      y: 100,
-      duration: 0.2,
-      opacity: 0,
-    })
+      .from(".PageAccueilSectionAccuel .right", {
+        delay: 0,
+        x: 100,
+        duration: 1,
+        opacity: 0,
+        ease: "slow(0.7, 0.7, false)",
+      })
+      .from(".PageAccueilSectionAccuel .pageTitle", {
+        y: 100,
+        duration: 0.2,
+        opacity: 0,
+      })
 
       .from(".PageAccueilSectionAccuel .MyTitle", {
         duration: 0.2,
@@ -64,20 +64,10 @@ function PageAccueilSectionAccueil() {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <PageAccueilSectionAccueilStc>
+    <PageAccueilSectionAccueilStc className="PageAccueilSectionAccuel">
       <DubaniOverlay width="70%" />
       <Container>
-        <Row
-          className="PageAccueilSectionAccuel"
-          style={{ position: "relative", zIndex: "2" }}
-        >
-=======
-    <PageAccueilSectionAccueilStc className="PageAccueilSectionAccuel">
-       <DubaniOverlay width="70%" />
-      <Container>
-        <Row className="" style={{position:"relative",zIndex:"2"}}>
->>>>>>> aefdcbbee9a3ab7694d9ab63422af1f532eb6349
+        <Row className="" style={{ position: "relative", zIndex: "2" }}>
           <Col lg={7} className=" align-self-center ">
             <div
               className="pr-0 pr-md-5 mr-0 mr-md-5"
@@ -95,22 +85,15 @@ function PageAccueilSectionAccueil() {
               </Bouton>
             </div>
           </Col>
-<<<<<<< HEAD
-          <Col className="px-md-0 right d-none d-lg-block align-self-center">
-            <Image src="/img/home-guy.jpg" layout="fill" />
-=======
           <Col
             lg={5}
             className="px-md-0 right d-none d-lg-block align-self-center"
           >
             <Image src="/img/g457.jpg" layout="fill" />
->>>>>>> aefdcbbee9a3ab7694d9ab63422af1f532eb6349
           </Col>
         </Row>
       </Container>
-      <div className="cover1 d-none d-lg-block">
-
-      </div>
+      <div className="cover1 d-none d-lg-block"></div>
     </PageAccueilSectionAccueilStc>
   );
 }
