@@ -74,7 +74,7 @@ function PageAccueilSectionProjet(props) {
                 <Container>
                     <Row className="px-0 px-md-4">
                         <Col lg={6} className="img d-none d-lg-block">
-                            <Image src="/img/banner.svg" width="900" height="800" alt="Banner projet dubani" />
+                           
                         </Col>
                         <Col lg={6}>
                             <Row>

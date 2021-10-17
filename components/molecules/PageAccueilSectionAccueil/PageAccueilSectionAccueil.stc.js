@@ -23,10 +23,22 @@ const PageAccueilSectionAccueilStc = Styled.section`
      .right
      {
         margin-top:-15px;
+<<<<<<< HEAD
          height:100vh;
         //  -webkit-animation-name: backgroundEffect;-webkit-animation-name
         //  animation-duration: 30s;animation-duration
         //  animation-iteration-count: infinite;animation-iteration-count
+=======
+        height:100vh;
+
+        &>div
+        {
+          min-width:590px;
+          left:-125px !important;
+        }
+
+        
+>>>>>>> aefdcbbee9a3ab7694d9ab63422af1f532eb6349
      }
      .PageAccueilSectionAccueilCover
       {
@@ -35,6 +47,24 @@ const PageAccueilSectionAccueilStc = Styled.section`
         width: 0%;
         // -webkit-animation-name: coverAnimation;-webkit-animation-name
         //  animation-duration: 3s;animation-duration
+      }
+
+      @keyframes yo-yo {
+        0% {
+          left: 0px !important;
+        }
+        25% {
+          left: -100px !important;
+        }
+        50% {
+          left: 0px !important;
+        }
+        75% {
+          left: 100px !important;
+        }
+        100% {
+          left: 0px !important;
+        }
       }
 
      @keyframes backgroundEffect {
@@ -54,12 +84,16 @@ const PageAccueilSectionAccueilStc = Styled.section`
       .cover1
       {
         height: 100vh;
-        background: #1530aa;
+        background: #394fb5;
         width: 40%;
         float: right;
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 9;
+       opacity:0;
+        // animation-name: example;
+        // animation-duration: 4s;
       }
 `;
 export default PageAccueilSectionAccueilStc;
