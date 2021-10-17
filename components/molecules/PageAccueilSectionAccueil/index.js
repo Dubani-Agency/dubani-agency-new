@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Bouton from "../../shared/Bouton";
 import Texte from "../../shared/Texte";
@@ -57,11 +57,13 @@ function PageAccueilSectionAccueil() {
 
   return (
     <PageAccueilSectionAccueilStc>
-       <DubaniOverlay width="70%" />
+      <DubaniOverlay width="70%" />
       <Container>
-        <Row className="PageAccueilSectionAccuel" style={{position:"relative",zIndex:"2"}}>
+        <Row
+          className="PageAccueilSectionAccuel"
+          style={{ position: "relative", zIndex: "2" }}
+        >
           <Col lg={7} className=" align-self-center ">
-           
             <div
               className="pr-0 pr-md-5 mr-0 mr-md-5"
               style={{ position: "relative", zIndex: 1 }}
@@ -74,15 +76,12 @@ function PageAccueilSectionAccueil() {
                 Avec une agence experte dans la création de site web
               </Texte>
               <Bouton className="btn" href="/contact">
-                  Embauchez nous
+                Embauchez nous
               </Bouton>
             </div>
           </Col>
-          <Col
-            lg={5}
-            className="px-md-0 right d-none d-lg-block align-self-center"
-          >
-            <Image src="/img/landing.svg" layout="fill" />
+          <Col className="px-md-0 right d-none d-lg-block align-self-center">
+            <Image src="/img/home-guy.jpg" layout="fill" />
           </Col>
         </Row>
       </Container>

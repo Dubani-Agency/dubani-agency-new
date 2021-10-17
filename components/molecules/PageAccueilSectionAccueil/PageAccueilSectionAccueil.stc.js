@@ -24,17 +24,17 @@ const PageAccueilSectionAccueilStc = Styled.section`
      {
         margin-top:-15px;
          height:100vh;
-        //  -webkit-animation-name: backgroundEffect;
-        //  animation-duration: 30s;
-        //  animation-iteration-count: infinite;
+        //  -webkit-animation-name: backgroundEffect;-webkit-animation-name
+        //  animation-duration: 30s;animation-duration
+        //  animation-iteration-count: infinite;animation-iteration-count
      }
      .PageAccueilSectionAccueilCover
       {
         background: #1530aa;
         height: 100vh;
         width: 0%;
-        // -webkit-animation-name: coverAnimation;
-        //  animation-duration: 3s;
+        // -webkit-animation-name: coverAnimation;-webkit-animation-name
+        //  animation-duration: 3s;animation-duration
       }
 
      @keyframes backgroundEffect {
