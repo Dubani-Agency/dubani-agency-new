@@ -66,9 +66,10 @@ function PageAccueilSectionAccueil() {
   return (
     <PageAccueilSectionAccueilStc className="PageAccueilSectionAccuel">
       <DubaniOverlay width="70%" />
+      <div className="cover1 d-none d-lg-block"></div>
       <Container>
         <Row className="" style={{ position: "relative", zIndex: "2" }}>
-          <Col lg={7} className=" align-self-center ">
+          <Col lg={6} className=" align-self-center ">
             <div
               className="pr-0 pr-md-5 mr-0 mr-md-5"
               style={{ position: "relative", zIndex: 1 }}
@@ -86,14 +87,14 @@ function PageAccueilSectionAccueil() {
             </div>
           </Col>
           <Col
-            lg={5}
+            lg={6}
             className="px-md-0 right d-none d-lg-block align-self-center"
           >
-            <Image src="/img/g457.jpg" layout="fill" />
+            <img src="/img/g457.jpg" height="100%" alt="banniere accueil de dubania agency" />
           </Col>
         </Row>
       </Container>
-      <div className="cover1 d-none d-lg-block"></div>
+     
     </PageAccueilSectionAccueilStc>
   );
 }

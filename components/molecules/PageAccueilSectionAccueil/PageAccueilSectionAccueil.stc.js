@@ -85,13 +85,13 @@ const PageAccueilSectionAccueilStc = Styled.section`
       {
         height: 100vh;
         background: #394fb5;
-        width: 40%;
+        width: 50%;
         float: right;
         position: absolute;
         top: 0;
         right: 0;
         z-index: 9;
-       opacity:0;
+      //  opacity:0;
         // animation-name: example;
         // animation-duration: 4s;
       }
