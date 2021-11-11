@@ -19,6 +19,17 @@ import "../public/styles/nprogress.css";
 function App({ Component, pageProps, apollo }) {
   const router = useRouter();
   useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("3272061786376016"); // facebookPixelId
+        ReactPixel.pageView();
+
+        router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });
+
     const handleRouteChange = (url) => {
       gtag.pageview(url);
     };
