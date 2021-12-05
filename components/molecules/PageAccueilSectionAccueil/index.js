@@ -4,8 +4,6 @@ import Bouton from "../../shared/Bouton";
 import Texte from "../../shared/Texte";
 import Title from "../../shared/Title";
 import PageAccueilSectionAccueilStc from "./PageAccueilSectionAccueil.stc";
-import Link from "next/link";
-import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DubaniOverlay from "../../shared/DubaniOverlay";
