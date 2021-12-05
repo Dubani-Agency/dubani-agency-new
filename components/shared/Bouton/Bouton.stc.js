@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 const BoutonStc=Styled.a`
-    background:#1530aa;
+    background:#2d519d;
     color:#fff;
     a
     {

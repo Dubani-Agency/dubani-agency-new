@@ -69,17 +69,17 @@ function PageAccueilSectionAccueil() {
       {/* <div className="cover1 d-none d-lg-block"></div> */}
       <Container>
         <Row className="" style={{ position: "relative", zIndex: "2" }}>
-          <Col lg={6} className=" align-self-center ">
+          <Col lg={6} className="my-5 pt-md-5 pt-0">
             <div
               className="pr-0 pr-md-5 mr-0 mr-md-5"
               style={{ position: "relative", zIndex: 1 }}
             >
               <Title className="pageTitle py-2 py-md-3">Dubani Agency</Title>
-              <Title niveau={1} className="MyTitle">
-                Créer un site web personnalisée pour générer plus de trafic,
+              <Title niveau={1} className="MyTitle mt-5">
+                  <span style={{"color":"#2d519d"}}>Nous sommes</span> votre partenaire pour votre <span style={{"color":"#64c5ea"}}>voyage digital</span>
               </Title>
               <Texte className="PageText h5 py-2 py-md-3 ">
-                Avec une agence experte dans la création de site web
+              Nous travaillons comme un pont entre vos clients et votre entreprise.
               </Texte>
               <Bouton className="btn" href="/contact">
                 Embauchez nous
@@ -92,6 +92,7 @@ function PageAccueilSectionAccueil() {
           >
             <img
               src="/img/home-guy.jpg"
+              style={{"marginTop":"-250px"}}
               height="100%"
               alt="banniere accueil de dubani agency"
             />
